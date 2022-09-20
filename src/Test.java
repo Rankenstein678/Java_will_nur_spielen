@@ -4,5 +4,6 @@ public class Test {
         Vertex v2 = new Vertex(42.0, 37.0);
         Vertex v3 = new Vertex(0, 0);
         System.out.println(v1 + " " + v2 + " " + v3);
+        System.out.println(v1.length());
     }
 }

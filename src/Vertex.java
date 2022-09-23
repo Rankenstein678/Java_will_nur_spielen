@@ -1,7 +1,6 @@
 public class Vertex {
 
-    public double x;
-    public double y;
+    public double x, y;
 
     public Vertex(double x, double y) {
         this.x = x;

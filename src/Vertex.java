@@ -46,7 +46,7 @@ public class Vertex {
     }
 
     public Vertex normalized() {
-        double mod = Math.sqrt(x * x + y * y);
+        double mod = length();
         return skalarMult(1/mod);
     }
 

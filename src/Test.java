@@ -16,5 +16,8 @@ public class Test {
         v1.addMod(v2);
         System.out.println("addMod() " + v1);
 
+        Vertex v4 = v3.normalized();
+        System.out.println(v4);
+        System.out.println(Math.sqrt(v4.x * v4.x + v4.y*v4.y));
     }
 }

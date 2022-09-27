@@ -29,6 +29,27 @@ public class Vertex {
         y += v2.getY();
     }
 
+    public Vertex sub(Vertex v2) {
+        return new Vertex(x - v2.x, y - v2.y);
+    }
+
+    public void subMod(Vertex v2) {
+        x -= v2.getX();
+        y -= v2.getY();
+    }
+
+    public double distance(Vertex v2) {
+        double modX = x - v2.x;
+        double modY = y - v2.y;
+
+        return Math.sqrt(modX * modX + modY * modY);
+    }
+
+    public Vertex normalized() {
+        double mod = Math.sqrt(x * x + y * y);
+        return skalarMult(1/mod);
+    }
+
     @Override
     public String toString() {
         return "(" + x + ", " + y + ")";
@@ -52,8 +73,7 @@ public class Vertex {
 
     @Override
     public boolean equals(Object thatObj) {
-        if (thatObj instanceof Vertex) {
-            Vertex that = (Vertex) thatObj;
+        if (thatObj instanceof Vertex that) {
             return x == that.x && y == that.y;
         }
         return false;

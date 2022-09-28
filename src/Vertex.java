@@ -1,6 +1,7 @@
 public class Vertex {
 
-    public double x, y;
+    public double x;
+    public double y;
 
     public Vertex(double x, double y) {
         this.x = x;
@@ -36,6 +37,7 @@ public class Vertex {
     public void subMod(Vertex v2) {
         x -= v2.getX();
         y -= v2.getY();
+
     }
 
     public double distance(Vertex v2) {

@@ -38,6 +38,35 @@ public class GeometricObject {
         this(0, 0, 10, 10);
     }
 
+    public double circumference() {
+        return (width + height) * 2;
+    }
+
+    public double area() {
+        return width * height;
+    }
+
+    public boolean contains(Vertex v1) {
+        return (v1.x >= pos.x && v1.x + width <= pos.x && v1.y >= pos.y && v1.y - height <= pos.y);
+    }
+
+    public boolean isLargerThan(GeometricObject g1) {
+        return area() > g1.area();
+    }
+
+
+    public void moveTo(Vertex v1) {
+        this.pos = v1;
+    }
+
+    public void moveTo(double x, double y) {
+        moveTo(new Vertex(x, y));
+    }
+
+    public void move(Vertex v1) {
+        moveTo(this.pos.add(v1));
+    }
+
     public Vertex getPos() {
         return pos;
     }
@@ -60,6 +89,14 @@ public class GeometricObject {
 
     public void setHeight(double height) {
         this.height = height;
+    }
+
+    @Override
+    public boolean equals(Object thatObject) {
+        if (thatObject instanceof GeometricObject that) {
+            return that.width == this.width && this.height == that.height && this.pos.equals(that.pos);
+        }
+        return false;
     }
 
     @Override

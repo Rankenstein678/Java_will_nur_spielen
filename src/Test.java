@@ -6,7 +6,8 @@ public class Test {
         GeometricObject g4 = new GeometricObject(1);
         GeometricObject g5 = new GeometricObject();
 
-        System.out.println(g1);
+        System.out.println(new SimpleTriangle(0,0,100).area());
+        System.out.println(new SimpleTriangle(1,0,100));
         System.out.println(g2);
         System.out.println(g3);
         System.out.println(g4);

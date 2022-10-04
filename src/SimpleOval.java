@@ -12,11 +12,11 @@ public class SimpleOval extends GeometricObject {
         return Math.PI * width * height / 4;
     }
 
-    //Circumference() ???
+    //circumference() ???
 
     @Override
     public String toString() {
-        return "SimpleOval" + super.toString();
+        return "SimpleOval: " + super.toString();
     }
 
     @Override

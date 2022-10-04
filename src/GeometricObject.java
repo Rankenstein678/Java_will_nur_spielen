@@ -46,8 +46,9 @@ public class GeometricObject {
         return width * height;
     }
 
-    public boolean contains(Vertex v1) {
-        return (v1.x >= pos.x && v1.x + width <= pos.x && v1.y >= pos.y && v1.y - height <= pos.y);
+    public boolean contains(Vertex v) {
+        return v.x >= pos.x && v.x <= pos.x + width
+                && v.y >= pos.y && v.y <= pos.y + height;
     }
 
     public boolean isLargerThan(GeometricObject g1) {

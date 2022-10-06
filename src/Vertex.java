@@ -49,7 +49,7 @@ public class Vertex {
 
     public Vertex normalized() {
         double mod = length();
-        return skalarMult(1/mod);
+        return skalarMult(1 / mod);
     }
 
     @Override

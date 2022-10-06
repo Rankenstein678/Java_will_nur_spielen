@@ -1,10 +1,10 @@
 public class SimpleTriangle extends GeometricObject {
     public SimpleTriangle(Vertex pos, double width) {
-        super(pos, width, width/2 * Math.sqrt(3));
+        super(pos, width, width / 2 * Math.sqrt(3));
     }
 
     public SimpleTriangle(double x, double y, double width) {
-        super(new Vertex(x, y), width, width/2 * Math.sqrt(3));
+        super(new Vertex(x, y), width, width / 2 * Math.sqrt(3));
     }
 
     @Override

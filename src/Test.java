@@ -1,6 +1,8 @@
+import util.ShowInFrame;
+
 public class Test {
     public static void main(String[] args) {
-        GeometricObject g1 = new GeometricObject(new Vertex(1, 2), 3, 4);
+        /*GeometricObject g1 = new GeometricObject(new Vertex(1, 2), 3, 4);
         GeometricObject g2 = new GeometricObject(1, 2, 3, 4);
         GeometricObject g3 = new GeometricObject(1, 2);
         GeometricObject g4 = new GeometricObject(1);
@@ -12,5 +14,9 @@ public class Test {
         System.out.println(g3);
         System.out.println(g4);
         System.out.println(g5);
+         */
+
+        ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableOval(50,50,50,50)));
+
     }
 }

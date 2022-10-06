@@ -1,5 +1,3 @@
-import util.ShowInFrame;
-
 import java.awt.*;
 
 public class SimpleSizedPanel extends SizedPanel {
@@ -10,7 +8,4 @@ public class SimpleSizedPanel extends SizedPanel {
         g.fillOval(100,200,60,80);
     }
 
-    public static void main(String[] args) {
-        ShowInFrame.show("AAAAAAAAAAA", new SimpleSizedPanel());
-    }
 }

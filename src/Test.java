@@ -18,7 +18,9 @@ public class Test {
         System.out.println(g5);
          */
 
-        ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableOval(50,50,50,50, Color.magenta)));
+        //ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableOval(50,50,50,50, Color.magenta)));
+        //EXPERIMENTAL!!! NICHT ABGEBEN!!!
+        ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableStar(100,100,12,50,10, Color.BLUE)));
 
     }
 }

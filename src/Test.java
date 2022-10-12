@@ -1,5 +1,7 @@
 import util.ShowInFrame;
 
+import java.awt.*;
+
 public class Test {
     public static void main(String[] args) {
         /*GeometricObject g1 = new GeometricObject(new Vertex(1, 2), 3, 4);
@@ -16,7 +18,7 @@ public class Test {
         System.out.println(g5);
          */
 
-        ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableOval(50,50,50,50)));
+        ShowInFrame.show("AAAAAAAAAAA", new PaintablePanel(new PaintableOval(50,50,50,50, Color.magenta)));
 
     }
 }

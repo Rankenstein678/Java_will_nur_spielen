@@ -1,6 +1,6 @@
 import java.awt.*;
 
-public class PaintablePanel extends SizedPanel{
+public class PaintablePanel extends SizedPanel {
     Paintable pa;
 
     public PaintablePanel(Paintable pa) {

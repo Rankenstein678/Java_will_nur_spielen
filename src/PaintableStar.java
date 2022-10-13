@@ -22,10 +22,10 @@ public class PaintableStar extends GeometricObject implements Paintable {
 
         for (int i = 0; i < zacken * 2; i++) {
             double deg = Math.toRadians(degrees * i); //Das hat mich viel zu viel Zeit gekostet
-            if (i % 2 == 0) {
+            if (i % 2 == 0) { //Spitzen
                 xpoly[i] = (int) Math.round(pos.x + Math.cos(deg) * radOuter);
                 ypoly[i] = (int) Math.round(pos.y - Math.sin(deg) * radOuter);
-            } else {
+            } else { //Einkerbungen
                 xpoly[i] = (int) Math.round(pos.x + Math.cos(deg) * radInner);
                 ypoly[i] = (int) Math.round(pos.y - Math.sin(deg) * radInner);
             }

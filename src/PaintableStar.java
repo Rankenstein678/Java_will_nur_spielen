@@ -1,6 +1,6 @@
 import java.awt.*;
 
-//EXPERIMENTAL!!! NICHT ABGEBEN!!!
+//EXPERIMENTELL!!! NICHT ABGEBEN!!!
 public class PaintableStar implements Paintable {
     double x, y;
     public int radInner, radOuter, zacken;

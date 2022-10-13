@@ -46,6 +46,10 @@ public class GeometricObject {
         this(0, 0, 10, 10);
     }
 
+    public GeometricObject(Vertex v) {
+        this(v,0,0,Color.BLACK);
+    }
+
     public double circumference() {
         return (width + height) * 2;
     }

@@ -1,17 +1,22 @@
 import java.awt.*;
 
-public class PaintableStar extends GeometricObject implements Paintable {
-    public int radInner, radOuter, zacken;
+public class PaintableStar extends SimpleStar implements Paintable {
+
 
     public PaintableStar(Vertex pos, int radInner, int radOuter, int zacken, Color color) {
-        super(pos, -1, -1, color);
-        this.radInner = radInner;
-        this.radOuter = radOuter;
-        this.zacken = zacken;
+        super(pos,color,radInner,radOuter,zacken);
+    }
+
+    public PaintableStar(Vertex pos, int radInner, int radOuter, int zacken) {
+        super(pos,radInner,radOuter,zacken);
     }
 
     public PaintableStar(double x, double y, int radInner, int radOuter, int zacken, Color color) {
         this(new Vertex(x, y), radInner, radOuter, zacken, color);
+    }
+
+    public PaintableStar(double x, double y, int radInner, int radOuter, int zacken) {
+        this(new Vertex(x, y), radInner, radOuter, zacken);
     }
 
     @Override

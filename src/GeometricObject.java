@@ -27,7 +27,7 @@ public class GeometricObject {
     }
 
     public GeometricObject(Vertex pos, double width, double height) {
-        this(pos, width, height, new Color(150, 0, 128));
+        this(pos, width, height, Color.black);
     }
 
     public GeometricObject(double x, double y, double width, double height) {

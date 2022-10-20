@@ -106,7 +106,8 @@ public class GeometricObject {
 
     @Override
     public boolean equals(Object thatObject) {
-        if (thatObject instanceof GeometricObject that) {
+        if (thatObject instanceof GeometricObject ) {
+            GeometricObject that = (GeometricObject) thatObject;
             return that.width == this.width && this.height == that.height && this.pos.equals(that.pos);
         }
         return false;
